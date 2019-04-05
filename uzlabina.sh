@@ -25,13 +25,12 @@ else
 	timeout=10
 fi
 
-status=$(curl -X POST -F username=$username -F password=$password https://wifi.uzlabina.cz --silent --connect-timeout $timeout)
-
 if nmcli | grep "spse.uzlabina.cz" > /dev/null
 then
 	if 
 		curl https://wifi.uzlabina.cz/ --silent > /dev/null
 	then
+		status=$(curl -X POST -F username=$username -F password=$password https://wifi.uzlabina.cz --silent --connect-timeout $timeout)
 		if echo $status | grep "Neplatné jméno nebo heslo" > /dev/null
 			then
 				printf "$ERRORFORMAT Invalid username/password\n"
