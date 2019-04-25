@@ -1,7 +1,7 @@
 # UzlabinaConnect
 A simple bash script using NetworkManager and curl to connect to the SPŠE V Úžlabině WiFi network.
 ## Requirements:
-- NetworkManager
+- NetworkManager (nmcli)
 - curl
 ## Features:
 - Included anonymous credentials that are used when no credentials are supplied
