@@ -50,6 +50,3 @@ else
 		echo -e "$ERRORFORMAT You are not connected to the Úžlabina WiFi network."
 	fi
 fi
-
-#printf "$status\n"
-#printf "USER:$username\nPASS:$password\n"
