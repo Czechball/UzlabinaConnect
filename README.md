@@ -10,3 +10,5 @@ A simple bash script using NetworkManager and curl to connect to the SPŠE V Ú�
 - WiFi spoofing detection
 ## Usage:
 `./uzlabina.sh [login] [password] [timeout]` (arguments are optional)
+
+**This script is obsolete, SPŠE V Úžlabině is now using WPA2 Enterprise instead of the old captive portal**
